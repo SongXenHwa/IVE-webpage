@@ -8,22 +8,42 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Style -->
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px} 
+
 /* Set the width of the sidebar to 120px */
 .w3-sidebar {width: 120px;background: #222;}
+
+.hoverpointer {
+  cursor: pointer;
+}
 .bgEleven {
   background-image: url('photos/Album/eleven.jpg');
   min-height: 10%;
   /* background-position: center; */
   background-size: 10%;
 }
+
+.downloadBtn {
+  background-color: rgb(53, 52, 52);
+  color: white;
+  cursor: pointer;
+  padding: 8px 24px;
+  float: right;
+
+}
+
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
+
+
+
 <body class="w3-black">
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
@@ -71,26 +91,35 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- Page Content -->
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"> I'VE (아이브)</h1>
-    <p> Dive With I'VE<p>
+  <header class="w3-container w3-padding-16 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo" style="font-family: 'Times New Roman', Times, serif;"> I'VE (아이브)</h1>
+    <h2 style="font-family: 'Times New Roman', Times, serif; padding-bottom: 10px;"> DIVE With I'VE</h2>
     <img src="Photos/Group/group5.jpg" alt="boy" class="w3-image" width="992" height="1108">
   </header>
 
   <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
     <h2 class="w3-text-light-grey">About</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p>IVE (아이브) is a six-member girl group under Starship Entertainment. They debuted on December 1, 2021 with their single album “Eleven”. </p>
+    <p>IVE (아이브) is a six-member girl group under Starship Entertainment. They debuted on December 1, 2021 with their single album “Eleven”. The group's fandom name is known as DIVE.</p>
     
     <video width="100%" height="100%" controls>
         <source src="video/eleven mv.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video> 
     
-    <h2 class="w3-text-light-grey" style="padding-top: 64px">Official Accounts</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <!-- <p class="w3-wide">Photography</p>
+    <h2 class="w3-text-light-grey" style="padding-top: 32px">Official Accounts</h2>
+    <p>Instagram: <a href="https://www.instagram.com/ivestarship/" target="_blank" class="w3-hover-text-red">instagram/IVEStarship</a><p>
+    <p>Twitter: <a href="https://twitter.com/IVE_twt" target="_blank" class="w3-hover-text-red">twitter/IVEStarship</a><p>
+    <p>Facebook: <a href="https://www.facebook.com/IVEstarship" target="_blank" class="w3-hover-text-red">facebook/IVEStarship</a><p>
+    <h4 >Members Accounts</h4>
+    <p>Yu Jin: <a href="https://www.instagram.com/_yujin_an/" target="_blank" class="w3-hover-text-red">instagram/Yujin</a><p>    
+    <p>Won Young: <a href="https://www.instagram.com/for_everyoung10/" target="_blank" class="w3-hover-text-red">instagram/WonYoung</a><p>
+    
+    
+    
+    <!-- <hr style="width:200px" class="w3-opacity">
+    <p class="w3-wide">Photography</p>
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:95%"></div>
     </div>
@@ -124,42 +153,60 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
     <button class="w3-button w3-light-grey w3-padding-large w3-section">
       <i class="fa fa-download"></i> Download Resume
-    </button> -->
-    </div>
+    </button>
+    </div> -->
+
+
     <div class="w3-padding-16 w3-content" id="members">
       <h2 class="w3-text-light-grey">Members</h2>  
       <hr style="width:200px" class="w3-opacity">
-      <img src="Photos/Gaeul/g10.jpg" alt="Gaeul" class="w3-left w3-circle w3-margin-right" style="width:80px">
-      <p><span class="w3-large w3-margin-right">Kim Ga Eul (김가을).</span> 24th September 2002.</p>
-      <p>Rapper, Main Dancer.</p><br>
 
-      <img src="Photos/Yujin/y10.jpg" alt="Yujin" class="w3-left w3-circle w3-margin-right" style="width:80px">
-      <p><span class="w3-large w3-margin-right">Ahn Yu Jin (안유진).</span> 1st September 2003.</p>
-      <p>Leader, Lead Vocalist.</p>
-      <br>
-      <img src="Photos/Rei/rei5.PNG" alt="Rei" class="w3-left w3-circle w3-margin-right" style="width:80px">
-      <p><span class="w3-large w3-margin-right">Naoi Rei (直井れい/ 나오이 레이).</span> 3rd February 2004.</p>
-      <p>Rapper, Vocalist.</p>
-      <br>
-      <img src="Photos/WonYoung/wy5.PNG" alt="WonYoung" class="w3-left w3-circle w3-margin-right" style="width:80px">
-      <p><span class="w3-large w3-margin-right">Jang Won Young (장원영).</span> 31st August 2004.</p>
-      <p>Vocalist, Visual.</p>
-      <br>
-      <img src="Photos/Liz/liz5.PNG" alt="Liz" class="w3-left w3-circle w3-margin-right" style="width:80px">
-      <p><span class="w3-large w3-margin-right">Kim Ji Won (김지원).</span> 21st November 2004.</p>
-      <p>Main Vocalist.</p>
-      <br>
-      <img src="Photos/Leeseo/lee5.jpg" alt="Leeseo" class="w3-left w3-circle w3-margin-right" style="width:80px">
-      <p><span class="w3-large w3-margin-right">Lee Hyun Seo (이현서).</span> 21st February 2007.</p>
-      <p>Vocalist, Maknae.</p>
-  <!-- End About Section -->
+      <div class = "w3-opacity w3-hover-opacity-off hoverpointer w3-hover-text-red" onclick="document.getElementById('gaeul').style.display='block'">
+        <img src="Photos/Gaeul/g10.jpg" alt="Gaeul" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Kim Ga Eul (김가을).</span> 24th September 2002.</p>
+        <p>Rapper, Main Dancer.</p><br>
+      </div>
+
+      <div class = "w3-opacity w3-hover-opacity-off hoverpointer w3-hover-text-red" onclick="document.getElementById('yujin').style.display='block'">
+        <img src="Photos/Yujin/y10.jpg" alt="Yujin" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Ahn Yu Jin (안유진).</span> 1st September 2003.</p>
+        <p>Leader, Lead Vocalist.</p>
+        <br>  
+      </div>
+
+      <div class = "w3-opacity w3-hover-opacity-off hoverpointer w3-hover-text-red" onclick="document.getElementById('rei').style.display='block'">
+        <img src="Photos/Rei/rei5.PNG" alt="Rei" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Naoi Rei (直井れい/ 나오이 레이).</span> 3rd February 2004.</p>
+        <p>Rapper, Vocalist.</p>
+        <br>
+      </div>
+      
+      <div class = "w3-opacity w3-hover-opacity-off hoverpointer w3-hover-text-red" onclick="document.getElementById('wonyoung').style.display='block'">
+        <img src="Photos/WonYoung/wy5.PNG" alt="WonYoung" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Jang Won Young (장원영).</span> 31st August 2004.</p>
+        <p>Lead Vocalist, Visual, Center.</p>
+        <br>
+      </div>
+      
+      <div class = "w3-opacity w3-hover-opacity-off hoverpointer w3-hover-text-red" onclick="document.getElementById('liz').style.display='block'">
+        <img src="Photos/Liz/liz5.PNG" alt="Liz" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Kim Ji Won (김지원).</span> 21st November 2004.</p>
+        <p>Main Vocalist.</p>
+        <br>
+      </div>
+
+      <div class = "w3-opacity w3-hover-opacity-off hoverpointer w3-hover-text-red" onclick="document.getElementById('leeseo').style.display='block'">
+        <img src="Photos/Leeseo/lee5.jpg" alt="Leeseo" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Lee Hyun Seo (이현서).</span> 21st February 2007.</p>
+        <p>Lead Vocalist, Maknae.</p><br>
+      </div>
     </div>
     <!-- Grid for pricing tables -->
     <div class="w3-padding-32 w3-content w3-row-padding" id="album">
         <h2 class="w3-text-light-grey">Album</h2>
         <hr style="width:200px" class="w3-opacity">
         <!-- <div class="w3-row-padding" > -->
-        <div class="w3-quarter ">
+        <div class="w3-quarter " style = "cursor: pointer;">
             <ul class="w3-ul w3-opacity w3-hover-opacity-off">
             <img src = "Photos/Album/eleven1.jpg" width= 100% height = 100% onclick="document.getElementById('eleven').style.display='block'">
             </ul>
@@ -178,29 +225,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
           </li>
           
         </ul>
-      </div> -->
-    <!-- End Grid/Pricing tables -->
-    <!-- </div> -->
-    </div>
-
-    <!-- Album Songs Modal -->
-    <div id="eleven" class="w3-modal">
-      <div class="w3-modal-content w3-animate-zoom">
-        <div class="w3-container w3-text-black w3-display-container" style = "background-color: red;">
-          <span onclick="document.getElementById('eleven').style.display='none'" class="w3-button w3-display-topright w3-hover-black w3-xlarge">x</span>
-          <h1>Songs</h1>
-        </div>
-        <div class="w3-container bgEleven w3-text-white">
-          <div class="audio-player">
-            <h2>1. Eleven</h2>
-            <audio id="audio-player" src="song/IVE - ELEVEN/01. ELEVEN.mp3" type="audio/mp3" controls="controls"></audio>
-          </div>
-          <div class="audio-player">
-            <h2>2. Take It</h2>
-            <audio id="audio-player" src="song/IVE - ELEVEN/02. Take It.mp3" type="audio/mp3" controls="controls"></audio>
-          </div>
-        </div>
-      </div>
+      </div>  -->
     </div>
     
     <!-- Testimonials -->
@@ -299,6 +324,61 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <!-- End footer -->
   </footer>
 
+  <!-- Members Stats Modal -->
+<div id="gaeul" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-text-white w3-display-container" style="background-color: rgb(18, 18, 93);">
+      <span onclick="document.getElementById('gaeul').style.display='none'" class="w3-button w3-display-topright w3-hover-black w3-xlarge">x</span>
+      <h1>Songs</h1>
+    </div>
+  </div>
+</div>
+
+<div id="yujin" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-text-white w3-display-container " style="background-color: rgb(0, 128, 0);">
+      <span onclick="document.getElementById('yujin').style.display='none'" class="w3-button w3-display-topright w3-hover-black w3-xlarge">x</span>
+      <h1>Songs</h1>
+    </div>
+  </div>
+</div>
+
+<div id="liz" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-text-white w3-display-container" style="background-color: rgb(194, 122, 194);">
+      <span onclick="document.getElementById('liz').style.display='none'" class="w3-button w3-display-topright w3-hover-black w3-xlarge">x</span>
+      <h1>Songs</h1>
+    </div>
+  </div>
+</div>
+
+<div id="wonyoung" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-text-white w3-display-container" style="background-color: rgb(185, 0, 0);">
+      <span onclick="document.getElementById('wonyoung').style.display='none'" class="w3-button w3-display-topright w3-hover-black w3-xlarge">x</span>
+      <h1>Songs</h1>
+    </div>
+  </div>
+</div>
+
+<div id="rei" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-text-white w3-display-container" style="background-color: rgb(230, 84, 0);">
+      <span onclick="document.getElementById('rei').style.display='none'" class="w3-button w3-display-topright w3-hover-black w3-xlarge">x</span>
+      <h1>Songs</h1>
+    </div>
+  </div>
+</div>
+
+<div id="leeseo" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-text-white w3-display-container" style="background-color: rgb(38, 38, 202);">
+      <span onclick="document.getElementById('leeseo').style.display='none'" class="w3-button w3-display-topright w3-hover-black w3-xlarge">x</span>
+      <h1>Songs</h1>
+    </div>
+  </div>
+</div>
+
 <!-- END PAGE CONTENT -->
 </div>
 
@@ -306,3 +386,26 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 </body>
 </html>
+
+
+<!-- Album Songs Modal -->
+<div id="eleven" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-text-white w3-display-container bgEleven">
+      <span onclick="document.getElementById('eleven').style.display='none'" class="w3-button w3-display-topright w3-hover-black w3-xlarge">x</span>
+      <h1>Songs</h1>
+    </div>
+    <div class="w3-container w3-dark-grey w3-text-black" style="padding-bottom: 24px;">
+      <div class="audio-player">
+        <h2>1. Eleven</h2>
+        <audio id="audio-player" src="song/IVE - ELEVEN/01. ELEVEN.mp3" type="audio/mp3" controls="controls" title="eleven"></audio>
+        <button class="downloadBtn"><a download = "eleven" ></a><i class="fa fa-download"></i>Download</button>
+      </div>
+      <div class="audio-player">
+        <h2>2. Take It</h2>
+        <audio id="audio-player" src="song/IVE - ELEVEN/02. Take It.mp3" type="audio/mp3" controls="controls"></audio>
+        <button class="downloadBtn"><i class="fa fa-download"></i>Download</button>
+      </div>
+    </div>
+  </div>
+</div>
